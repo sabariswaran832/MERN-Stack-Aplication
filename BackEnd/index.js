@@ -3,7 +3,7 @@ const routes = require("./src/routes/routes");
 const db=require("./src/config/config")
 const app = express();
 const cors=require("cors")
-// const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 app.use(cors({
     origin: 'http://localhost:3000', // Allow only requests from your React app
     methods: ['GET', 'POST','PUT','DELETE'],        // Allow specific methods
